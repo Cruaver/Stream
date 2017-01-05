@@ -23,8 +23,7 @@ session_start();
 <body>
 <div id="menu">
     <ul>
-        <li><a href="Home.php">
-        <li>Home</a></li>
+        <li><a href="Home.php">Home</a></li>
         <li class="dropdown"><a class="dropbtn">Categorie</a>
             <div class="dropdown-content">
                 <a href="#">Film</a>
