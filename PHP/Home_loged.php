@@ -26,6 +26,23 @@ $user = UserDetails($_SESSION['user_id']);
     <title>Stream</title>
 </head>
 <body>
+<div id="menu">
+    <ul>
+        <li><a href="Home.php"><li><label>Home</label></a></li>
+        <li class="dropdown"><a class="dropbtn"></a><label>Categorie</label>
+            <div class="dropdown-content">
+                <a href="#"><label>Film</label></a>
+                <a href="#"><label>Serie</label></a>
+            </div>
+        </li>
+        <li><a href="#"><label>test</label></a></li>
+        <li class="dropdown-param"><a class="dropbtn-param"><img src="../IMG/parametre.png"></a>
+            <div class="dropdown-content-param">
+                <a href="logout.php" class="btn">Logout</a>
+            </div>
+        </li>
+    </ul>
+</div>
 <div class="container">
     <h2>
         Profile
@@ -36,7 +53,6 @@ $user = UserDetails($_SESSION['user_id']);
         gerergreggregrerregrgergegrergegre
         gerrgerggrergregrgereggregregrregeggreegregrreg
     </p>
-    <a href="logout.php" class="btn">Logout</a>
 </div>
 </body>
 </html>
