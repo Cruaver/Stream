@@ -144,7 +144,7 @@ h3 {
 /* Contain 1*/
 
 #contain1 {
-    width: 610px;
+    width: 100%;
     height: 77vh;
     overflow: hidden;
     position: relative;
