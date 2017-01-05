@@ -6,7 +6,7 @@
  * Time: 13:11
  */
 
-if (isset($_SESSION['user_id'])) {
+if ($_SESSION['user_id'] != "") {
     header("Location: Home_loged.php");
 }
 ?>
