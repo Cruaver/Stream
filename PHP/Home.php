@@ -16,13 +16,11 @@ if(isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
 </head>
 <body>
 <div class="container">
     <a href="register.php">register</a>
     <a href="login.php">login</a>
-    <div class="well">
         <h2>
             Profile
         </h2>
@@ -32,8 +30,7 @@ if(isset($_SESSION['user_id'])) {
             gerergreggregrerregrgergegrergegre
             gerrgerggrergregrgereggregregrregeggreegregrreg
         </p>
-        <a href="logout.php" class="btn btn-primary">Logout</a>
+        <a href="logout.php" class="btn">Logout</a>
     </div>
-</div>
 </body>
 </html>

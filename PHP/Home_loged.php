@@ -23,22 +23,19 @@ $user = UserDetails($_SESSION['user_id']);
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
 </head>
 <body>
 <div class="container">
-    <div class="well">
-        <h2>
-            Profile
-        </h2>
-        <h3>Hello <?php echo $user->name ?>,</h3>
-        <p>
-            testetesteteetteetehggewhhguihejoeuhguirehgeuhuigrherghgerhogrr\gergergerreggrrg
-            gerergreggregrerregrgergegrergegre
-            gerrgerggrergregrgereggregregrregeggreegregrreg
-        </p>
-        <a href="logout.php" class="btn btn-primary">Logout</a>
-    </div>
+    <h2>
+        Profile
+    </h2>
+    <h3>Hello <?php echo $user->name ?>,</h3>
+    <p>
+        testetesteteetteetehggewhhguihejoeuhguirehgeuhuigrherghgerhogrr\gergergerreggrrg
+        gerergreggregrerregrgergegrergegre
+        gerrgerggrergregrgereggregregrregeggreegregrreg
+    </p>
+    <a href="logout.php" class="btn">Logout</a>
 </div>
 </body>
 </html>

@@ -6,8 +6,8 @@
  * Time: 12:53
  */
 
-require ("log_reg_func.php");
-require ("./Database.php");
+require("log_reg_func.php");
+require("./Database.php");
 
 session_start();
 $db = DB();
@@ -42,39 +42,36 @@ if (!empty($_POST['btnRegister'])) {
     <meta charset="utf-8">
     <title>Logo</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
 </head>
 <body>
-<div class="row">
-    <div class="col-md-5 well">
-        <h4>Register</h4>
-        <?php
-        if ($register_error_message != "") {
-            echo '<div class="alert alert-danger"><strong>Error: </strong> ' . $register_error_message . '</div>';
-        }
-        ?>
-        <form action="register.php" method="post">
-            <div class="form-group">
-                <label for="">Name</label>
-                <input type="text" name="name" class="form-control"/>
-            </div>
-            <div class="form-group">
-                <label for="">Email</label>
-                <input type="email" name="email" class="form-control"/>
-            </div>
-            <div class="form-group">
-                <label for="">Username</label>
-                <input type="text" name="username" class="form-control"/>
-            </div>
-            <div class="form-group">
-                <label for="">Password</label>
-                <input type="password" name="password" class="form-control"/>
-            </div>
-            <div class="form-group">
-                <input type="submit" name="btnRegister" class="btn btn-primary" value="Register"/>
-            </div>
-        </form>
-    </div>
+<div>
+    <h4>Register</h4>
+    <?php
+    if ($register_error_message != "") {
+        echo '<div class="alert"><strong>Error: </strong> ' . $register_error_message . '</div>';
+    }
+    ?>
+    <form action="register.php" method="post">
+        <div class="form">
+            <label for="">Name</label>
+            <input type="text" name="name" class="form_input"/>
+        </div>
+        <div class="form">
+            <label for="">Email</label>
+            <input type="email" name="email" class="form_input"/>
+        </div>
+        <div class="form">
+            <label for="">Username</label>
+            <input type="text" name="username" class="form_input"/>
+        </div>
+        <div class="form">
+            <label for="">Password</label>
+            <input type="password" name="password" class="form_input"/>
+        </div>
+        <div class="form">
+            <input type="submit" name="btnRegister" class="btn" value="Register"/>
+        </div>
+    </form>
 </div>
 </body>
 </html>

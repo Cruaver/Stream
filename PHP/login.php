@@ -40,31 +40,28 @@ if (!empty($_POST['btnLogin'])) {
     <meta charset="utf-8">
     <title>Logo</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
 </head>
 <body>
-<div class="row">
-    <div class="col-md-5 well">
+<div>
         <h4>Login</h4>
         <?php
         if ($login_error_message != "") {
-            echo '<div class="alert alert-danger"><strong>Error: </strong> ' . $login_error_message . '</div>';
+            echo '<div class="alert"><strong>Error: </strong> ' . $login_error_message . '</div>';
         }
         ?>
         <form action="login.php" method="post">
-            <div class="form-group">
+            <div class="form">
                 <label for="">Username/Email</label>
-                <input type="text" name="username" class="form-control"/>
+                <input type="text" name="username" class="form_input"/>
             </div>
-            <div class="form-group">
+            <div class="form">
                 <label for="">Password</label>
-                <input type="password" name="password" class="form-control"/>
+                <input type="password" name="password" class="form_input"/>
             </div>
-            <div class="form-group">
-                <input type="submit" name="btnLogin" class="btn btn-primary" value="Login"/>
+            <div class="form">
+                <input type="submit" name="btnLogin" class="btn" value="Login"/>
             </div>
         </form>
-    </div>
 </div>
 </body>
 </Html>
