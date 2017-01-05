@@ -17,87 +17,6 @@ h3 {
     color: rgba(255, 255, 255, 0.77);
 }
 
-#text1 {
-    width: 100px;
-    height: 200px;
-}
-
-#tabtab {
-    border: 1px solid white;
-    text-align: center;
-}
-
-#ththt {
-    color: white;
-    text-align: center;
-}
-
-#inscription {
-    color: white;
-    text-align: center;
-    margin-top: 100px;
-}
-
-#inscription input {
-    color: black;
-}
-
-input {
-    color: black;
-}
-
-#info {
-    color: white;
-    text-align: center;
-}
-
-#tableau1 {
-    width: 100%;
-    border: 1px solid white;
-    color: white;
-    text-align: center;
-}
-
-#info_input {
-    width: 200px;
-    height: 15px;
-    text-align: center;
-}
-
-#fr {
-    width: 110px;
-    height: 100px;
-    text-align: center;
-}
-
-#fleche {
-    text-align: left;
-    height: 30px;
-}
-
-#logo_etna {
-    height: 70px;
-}
-
-#logo_bri {
-    height: 80px;
-}
-
-#menu h1 {
-    color: white;
-    text-align: center;
-}
-
-#Login {
-    margin-top: 15%;
-    color: white;
-    text-align: center;
-}
-
-#login {
-    width: 100px;
-}
-
 #menu ul {
     list-style-type: none;
     margin: 0;
@@ -135,36 +54,9 @@ input {
     height: 35px;
 }
 
-#test {
-    margin-top: 2%;
-}
-
-#test table {
-    border-collapse: collapse;
-    width: 100%;
+#menu h1 {
     color: white;
-}
-
-#test th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-#test tr:hover {
-    background-color: #000000;
-}
-
-#notif {
-    margin-top: 100px;
-    margin-right: 100px;
-}
-
-#notif img {
-    margin-top: 100px;
-    margin-right: 100px;
-    width: 50px;
-    height: 50px;
+    text-align: center;
 }
 
 .dropbtn {
@@ -219,40 +111,4 @@ input {
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
-}
-
-#tete:hover {
-    background-color: white;
-}
-
-#footer {
-    bottom: 170px;
-    text-align: center;
-    display: inline-table;
-}
-
-#titre_homepage {
-    color: white;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
-
-#cordes {
-    color: white;
-}
-
-#casque {
-    color: white;
-}
-
-#metallique {
-    color: white;
-}
-
-#harnais {
-    color: white;
-}
-
-#divers {
-    color: white;
 }
