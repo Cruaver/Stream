@@ -31,7 +31,7 @@ if (isset($_SESSION['user_id'])) {
         <li><a href="#"><label>test</label></a></li>
 
         <li class="dropdown"><a class="dropbtn"><img src="../IMG/parametre.png"></a>
-            <div class="dropdown-content">
+            <div class="dropdown-content-param">
                 <a href="register.php">register</a>
                 <a href="login.php">login</a>
             </div>
