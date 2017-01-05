@@ -18,6 +18,27 @@ if (isset($_SESSION['user_id'])) {
     <title>Stream</title>
 </head>
 <body>
+<div id="menu">
+    <ul>
+        <a href="Home.php"><li><label>Home</label></li></a>>
+        <a href=""<li><label>Categorie</label></li></a>
+        <li class="dropdown"><a class="dropbtn"><img src="../IMG/parametre.png"></a>
+            <div class="dropdown-content">
+
+            </div>
+        </li>
+        <a href=""><li><label></label></li></a>
+
+        <li class="dropdown"><a class="dropbtn"><img src="../IMG/parametre.png"></a>
+            <div class="dropdown-content">
+                <a href="javascript:window.print()">Impression</a>
+                <a href="inscription.php">Ajouter un compte</a>
+                <a onclick="Users()">Utilisateurs</a>
+                <a href="logout.php">Se dÃ©connecter</a>
+            </div>
+        </li>
+    </ul>
+</div>
 <div class="container">
     <a href="register.php">register</a>
     <a href="login.php">login</a>
