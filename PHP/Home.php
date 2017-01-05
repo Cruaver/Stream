@@ -55,7 +55,7 @@ session_start();
             echo " new visitor,";
         ?>
     </h3>
-    <h3>THE TOP 3 YOU LIKE</h3>
+    <h2>THE TOP 3 YOU LIKE</h2>
     <div id="contain1">
         <ul>
             <li><a href="#top1"><img src="http://img01.deviantart.net/52e5/i/2016/064/2/1/pokemon_moon_wallpaper__8_5__by_nicholas_checchia-d9u159b.png"></a></li>
