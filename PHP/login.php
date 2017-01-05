@@ -38,7 +38,7 @@ if (!empty($_POST['btnLogin'])) {
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Logo</title>
+    <title>Stream</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>

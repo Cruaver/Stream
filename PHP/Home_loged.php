@@ -22,7 +22,7 @@ $user = UserDetails($_SESSION['user_id']);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Profile</title>
+    <title>Stream</title>
 </head>
 <body>
 <div class="container">
