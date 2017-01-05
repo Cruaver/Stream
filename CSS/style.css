@@ -123,14 +123,14 @@ h3 {
 }
 
 .dropdown-content-param a {
-    color: black;
+    color: white;
     padding: 5px 21px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content-param a:hover {
-    background-color: #4c4949;
+    background-color: #3e8e41;
 }
 
 .dropdown-param:hover .dropdown-content-param {
@@ -138,5 +138,5 @@ h3 {
 }
 
 .dropdown-param:hover .dropbtn-param {
-    background-color: #3e8e41;
+    background-color: #4c4949;
 }
