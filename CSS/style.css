@@ -16,91 +16,75 @@ h3 {
     color: rgba(255, 255, 255, 0.77);
 }
 
-/*menu*/
-
-.menu {
-    background-color: #f7f5e7;
-    margin: 0 auto;
-    max-width: 1600px;
-    width: 100%;
-}
-
-.main_nav {
-    clear: both;
-    margin: 0 auto;
-    max-width: 1080px;
-    min-height: 45px;
-    position: relative;
-}
-
-ul.nav-menu,
-div.nav-menu > ul {
+#menu ul {
+    list-style-type: none;
     margin: 0;
-    padding: 0 40px 0 0;
+    padding: 0;
+    background-color: #000000;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
 }
 
-.nav-menu li {
-    display: inline-block;
-    position: relative;
+#menu li {
+    float: left;
 }
 
-.nav-menu li a {
-    color: #141412;
+#menu li label {
     display: block;
-    font-size: 15px;
-    line-height: 1;
-    padding: 15px 20px;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#menu li label:hover:not(.active) {
+    background-color: #666666;
+}
+
+#menu .parametre {
+    float: right;
+    height: 35px;
+}
+
+#menu img {
+    width: 35px;
+    height: 35px;
+}
+
+#menu h1 {
+    color: white;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #312f2f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 40px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    z-index: 1;
+}
+
+.dropdown-content a {
     text-decoration: none;
 }
 
-.nav-menu li:hover > a,
-.nav-menu li a:hover,
-.nav-menu li:focus > a,
-.nav-menu li a:focus {
-    background-color: #220e10;
-    color: #fff;
+.dropdown-content a:hover {
+    background-color: #4c4949;
 }
 
-.nav-menu .children {
-    background-color: #220e10;
-    border: 2px solid #f7f5e7;
-    border-top: 0;
-    padding: 0;
-    position: absolute;
-    left: -2px;
-    z-index: 99999;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
+.dropdown:hover .dropdown-content {
+    display: block;
 }
-
-ul.nav-menu ul a,
-.nav-menu ul ul a {
-    color: #fff;
-    margin: 0;
-    width: 200px;
-}
-
-ul.nav-menu ul a:hover,
-.nav-menu ul ul a:hover,
-ul.nav-menu ul a:focus,
-.nav-menu ul ul a:focus {
-    background-color: #db572f;
-}
-
-ul.nav-menu li:hover > ul,
-.nav-menu ul li:hover > ul,
-ul.nav-menu .focus > ul,
-.nav-menu .focus > ul {
-    clip: inherit;
-    overflow: inherit;
-    height: inherit;
-    width: inherit;
-}
-
-
-/*param*/
 
 .dropbtn-param {
     background-color: rgb(64, 158, 68);
@@ -155,4 +139,3 @@ ul.nav-menu .focus > ul,
 .dropdown-param:hover .dropbtn-param {
     background-color: #3e8e41;
 }
-
