@@ -5,8 +5,11 @@
  * Date: 05/01/17
  * Time: 13:11
  */
-
 session_start();
+
+require("log_reg_func.php");
+require("./Database.php");
+
 ?>
 
 <!doctype html>
