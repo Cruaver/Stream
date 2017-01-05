@@ -110,6 +110,7 @@ h3 {
 .dropdown-content-param {
     display: none;
     position: absolute;
+    color: white;
     background-color: #312f2f;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
