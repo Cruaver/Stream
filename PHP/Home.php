@@ -15,6 +15,7 @@ if (isset($_SESSION['user_id'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title>Stream</title>
 </head>
 <body>
@@ -33,7 +34,6 @@ if (isset($_SESSION['user_id'])) {
             <div class="dropdown-content">
                 <a href="register.php">register</a>
                 <a href="login.php">login</a>
-                <a href="logout.php">Se déconnecter</a>
             </div>
         </li>
     </ul>

@@ -22,6 +22,7 @@ $user = UserDetails($_SESSION['user_id']);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title>Stream</title>
 </head>
 <body>
