@@ -31,7 +31,7 @@ if (!empty($_POST['btnRegister'])) {
     } else {
         $user_id = Register($_POST['name'], $_POST['email'], $_POST['username'], $_POST['password']);
         $_SESSION['user_id'] = $user_id;
-        header("Location: Home_loged.php");
+        header("Location: Home.php");
     }
 }
 

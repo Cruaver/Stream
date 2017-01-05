@@ -26,7 +26,7 @@ if (!empty($_POST['btnLogin'])) {
         $user_id = Login($username, $password);
         if ($user_id > 0) {
             $_SESSION['user_id'] = $user_id;
-            header("Location: Home_loged.php");
+            header("Location: Home.php");
         } else {
             $login_error_message = 'Invalid login details!';
         }
