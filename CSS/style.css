@@ -143,42 +143,61 @@ h3 {
 
 /* Contain 1*/
 
-@keyframes AutoSlide {
-    0%, 15%, 100% {
-        left: 0px; /*1ère image*/
-    }
-    35%, 50% {
-        left: -150px; /*2ème image*/
-    }
-    70%, 85% {
-        left: -300px; /*3ème image*/
-    }
-}
-
-#contain1 {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    margin: 20px auto;
+#container1 {
+    width: 610px;
+    height: 211px;
     overflow: hidden;
+    position: relative;
+    background-image: url(YOUR-URL-IMAGE.png);
 }
 
-#S_contain1 li {
-    display: inline;
+.slid_1, .slid_2, .slid_3 {
+    position: absolute;
+    width: 610px;
+    height: 211px;
+}
+
+.slid_1 {
+    left: 0;
+}
+
+.slid_2 {
+    left: 610px;
+}
+
+.slid_3 {
+    left: 1220px;
 }
 
 #S_contain1 {
+    width: 1220px;
+    height: 211px;
+    left: 0px;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 450px;
-    margin: 0;
-    padding: 0;
-
-    animation-name: AutoSlide;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-name: anim_slide;
+}
+
+@keyframes anim_slide {
+    0% {
+        left: 0px;
+    }
+    22% {
+        left: 0px;
+    }
+    33% {
+        left: -610px;
+    }
+    45% {
+        left: -610px;
+    }
+    66% {
+        left: -1220px;
+    }
+    90% {
+        left: -1220px;
+    }
 }
 
 /* Contain 2 */
