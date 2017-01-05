@@ -31,7 +31,7 @@ h3 {
     float: left;
 }
 
-#menu li label {
+#menu li a {
     display: block;
     color: white;
     text-align: center;
@@ -40,7 +40,7 @@ h3 {
     cursor: pointer;
 }
 
-#menu li label:hover:not(.active) {
+#menu li a:hover:not(.active) {
     background-color: #666666;
 }
 
