@@ -39,7 +39,7 @@ if (isset($_SESSION['user_id'])) {
     </ul>
 </div>
 <div class="container">
-    <h3>Hello <?php echo $user->name ?>,</h3>
+    <h3>Hello new visitor,</h3>
     <p>
         testetesteteetteetehggewhhguihejoeuhguirehgeuhuigrherghgerhogrr\gergergerreggrrg
         gerergreggregrerregrgergegrergegre
