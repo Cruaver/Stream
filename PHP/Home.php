@@ -57,7 +57,7 @@ session_start();
     </h3>
     <h2>THE TOP 3 YOU LIKE</h2>
     <div id="contain1">
-        <ul>
+        <ul id="S_contain1">
             <li><a href="#top1"><img src="http://img01.deviantart.net/52e5/i/2016/064/2/1/pokemon_moon_wallpaper__8_5__by_nicholas_checchia-d9u159b.png"></a></li>
             <li><a href="#top2"><img src="http://img12.deviantart.net/89ee/i/2016/064/8/6/pokemon_sun_wallpaper__8_5__by_nicholas_checchia-d9u15js.png"></a></li>
             <li><a href="#top3"><img src="http://purenintendo.com/wp-content/uploads/2013/07/3DSXL_zps44e462e8.jpg"></a></li>
