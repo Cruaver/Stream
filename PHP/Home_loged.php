@@ -28,14 +28,14 @@ $user = UserDetails($_SESSION['user_id']);
 <body>
 <div id="menu">
     <ul>
-        <li><a href="Home.php"><li><label>Home</label></a></li>
-        <li class="dropdown"><a class="dropbtn"></a><label>Categorie</label>
+        <li><a href="Home.php"><li>Home</a></li>
+        <li class="dropdown"><a class="dropbtn">Categorie</a>
             <div class="dropdown-content">
-                <a href="#"><label>Film</label></a>
-                <a href="#"><label>Serie</label></a>
+                <a href="#">Film</a>
+                <a href="#">Serie</a>
             </div>
         </li>
-        <li><a href="#"><label>test</label></a></li>
+        <li><a href="#">tes</a></li>
         <li class="dropdown-param"><a class="dropbtn-param"><img src="../IMG/parametre.png"></a>
             <div class="dropdown-content-param">
                 <a href="logout.php" class="btn">Logout</a>
