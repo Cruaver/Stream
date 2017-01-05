@@ -38,7 +38,7 @@ h3 {
     padding: 10px 10px;
     text-decoration: none;
     cursor: pointer;
-    display: none;
+    text-decoration: none;
 }
 
 #menu li a:hover:not(.active) {
