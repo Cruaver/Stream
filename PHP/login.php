@@ -40,6 +40,7 @@ if (!empty($_POST['btnLogin'])) {
     <meta charset="utf-8">
     <title>Logo</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
 </head>
 <body>
 <div class="row">
