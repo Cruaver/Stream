@@ -35,7 +35,7 @@ $user = UserDetails($_SESSION['user_id']);
                 <a href="#">Serie</a>
             </div>
         </li>
-        <li><a href="#">tes</a></li>
+        <li><a href="#">test</a></li>
         <li class="dropdown-param"><a class="dropbtn-param"><img src="../IMG/parametre.png"></a>
             <div class="dropdown-content-param">
                 <a href="logout.php" class="btn">Logout</a>
