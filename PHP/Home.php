@@ -7,9 +7,6 @@
  */
 
 session_start();
-if (isset($_SESSION['user_id'])) {
-    header("Location: Home_loged.php");
-}
 ?>
 
 <!doctype html>
@@ -22,7 +19,8 @@ if (isset($_SESSION['user_id'])) {
 <body>
 <div id="menu">
     <ul>
-        <li><a href="Home.php"><li>Home</a></li>
+        <li><a href="Home.php">
+        <li>Home</a></li>
         <li class="dropdown"><a class="dropbtn">Categorie</a>
             <div class="dropdown-content">
                 <a href="#">Film</a>
@@ -32,14 +30,28 @@ if (isset($_SESSION['user_id'])) {
         <li><a href="#">test</a></li>
         <li class="dropdown-param"><a class="dropbtn-param"><img src="../IMG/parametre.png"></a>
             <div class="dropdown-content-param">
-                <a href="register.php">register</a>
-                <a href="login.php">login</a>
+                <?php
+                if (isset($_SESSION['user_id'])) {
+                    ?>
+                    <a href="register.php">register</a>
+                    <a href="login.php">login</a>
+                <?php } else { ?>
+                    <a href="logout.php" class="btn">Logout</a>
+                <?php } ?>
             </div>
         </li>
     </ul>
 </div>
 <div class="container">
-    <h3>Hello new visitor,</h3>
+    <h3>Hello
+        <?php
+            if(isset($_SESSION['user_id'])) {
+                $user = UserDetails($_SESSION['user_id']);
+                echo $user->name;
+        } else
+            echo " new visitor,";
+        ?>
+    </h3>
     <p>
         testetesteteetteetehggewhhguihejoeuhguirehgeuhuigrherghgerhogrr\gergergerreggrrg
         gerergreggregrerregrgergegrergegre
