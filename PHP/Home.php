@@ -48,18 +48,21 @@ session_start();
 <div class="container">
     <h3>Hello
         <?php
-            if(isset($_SESSION['user_id'])) {
-                $user = UserDetails($_SESSION['user_id']);
-                echo $user->name . ",";
+        if (isset($_SESSION['user_id'])) {
+            $user = UserDetails($_SESSION['user_id']);
+            echo $user->name . ",";
         } else if (empty($_SESSION['user_id']))
             echo " new visitor,";
         ?>
     </h3>
-    <p>
-        testetesteteetteetehggewhhguihejoeuhguirehgeuhuigrherghgerhogrr\gergergerreggrrg
-        gerergreggregrerregrgergegrergegre
-        gerrgerggrergregrgereggregregrregeggreegregrreg
-    </p>
+    <h3>THE TOP 3 YOU LIKE</h3>
+    <div id="contain1">
+        <ul>
+            <li><a href="#top1"><img src="http://img01.deviantart.net/52e5/i/2016/064/2/1/pokemon_moon_wallpaper__8_5__by_nicholas_checchia-d9u159b.png"></a></li>
+            <li><a href="#top2"><img src="http://img12.deviantart.net/89ee/i/2016/064/8/6/pokemon_sun_wallpaper__8_5__by_nicholas_checchia-d9u15js.png"></a></li>
+            <li><a href="#top3"><img src="http://purenintendo.com/wp-content/uploads/2013/07/3DSXL_zps44e462e8.jpg"></a></li>
+        </ul>
+    </div>
 </div>
 </body>
 </html>
