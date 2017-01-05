@@ -17,6 +17,8 @@ h3 {
     margin-top: 6%;
 }
 
+/* MENU */
+
 #menu ul {
     list-style-type: none;
     margin: 0;
@@ -137,4 +139,11 @@ h3 {
 
 .dropdown-param:hover .dropdown-content-param {
     display: block;
+}
+
+/* Contain 1*/
+
+.container {
+    display: block;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv2/ab1d4a91-9f63-452f-b9c4-10a400175b1c/e052de5c-6659-4327-bb64-9d4d1f870bc8/FR-fr-20161226-popuniqueviewsdrama-perspective_alpha_website_small.jpg") no-repeat center fixed;
 }
