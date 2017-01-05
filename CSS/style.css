@@ -87,6 +87,7 @@ h3 {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+------------
 
 .dropbtn-param {
     background-color: rgb(64, 158, 68);
@@ -114,9 +115,9 @@ h3 {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    position: fixed;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     right: 0px;
+    position: fixed;
     top: 40px;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
@@ -130,14 +131,13 @@ h3 {
     display: block;
 }
 
-.dropdown-content-param a:hover {
-    background-color: #f1f1f1
-}
+.dropdown-content-param a:hover {background-color: #f1f1f1}
 
-.dropdown:hover .dropdown-content-param {
+.dropdown-param:hover .dropdown-content-param {
     display: block;
 }
 
-.dropdown:hover .dropbtn {
+.dropdown-param:hover .dropbtn-param {
     background-color: #3e8e41;
 }
+
