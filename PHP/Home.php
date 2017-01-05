@@ -60,16 +60,17 @@ session_start();
 <div align="center">
     <div id="contain1">
         <div id="S_contain1">
-            <div class="slid_1"
-            <a href="#top1"><img
-                        src="http://img01.deviantart.net/52e5/i/2016/064/2/1/pokemon_moon_wallpaper__8_5__by_nicholas_checchia-d9u159b.png"></a>
-        </div class="slid_2">
-        <div><a href="#top2"><img
-                        src="http://img12.deviantart.net/89ee/i/2016/064/8/6/pokemon_sun_wallpaper__8_5__by_nicholas_checchia-d9u15js.png"></a>
-        </div>
-        <div class="slid_3"><a href="#top3"><img src="http://purenintendo.com/wp-content/uploads/2013/07/3DSXL_zps44e462e8.jpg"></a>
+            <div class="slid_1"><a href="#top1"><img
+                            src="http://img01.deviantart.net/52e5/i/2016/064/2/1/pokemon_moon_wallpaper__8_5__by_nicholas_checchia-d9u159b.png"></a>
+            </div>
+            <div class="slid_2"><a href="#top2"><img
+                            src="http://img12.deviantart.net/89ee/i/2016/064/8/6/pokemon_sun_wallpaper__8_5__by_nicholas_checchia-d9u15js.png"></a>
+            </div>
+            <div class="slid_3"><a href="#top3"><img
+                            src="http://purenintendo.com/wp-content/uploads/2013/07/3DSXL_zps44e462e8.jpg"></a>
+            </div>
         </div>
     </div>
-</div>
+    <div>
 </body>
 </html>
