@@ -35,7 +35,7 @@ session_start();
                     ?>
                     <a href="register.php">register</a>
                     <a href="login.php">login</a>
-                <?php } else { ?>
+                <?php } else if (!isset($_SESSION['user_id'])) { ?>
                     <a href="logout.php" class="btn">Logout</a>
                 <?php } ?>
             </div>
@@ -48,7 +48,7 @@ session_start();
             if(isset($_SESSION['user_id'])) {
                 $user = UserDetails($_SESSION['user_id']);
                 echo $user->name;
-        } else
+        } else if (!isset($_SESSION['user_id']))
             echo " new visitor,";
         ?>
     </h3>
