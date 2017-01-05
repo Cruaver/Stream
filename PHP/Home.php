@@ -30,7 +30,7 @@ if (isset($_SESSION['user_id'])) {
         </li>
         <li><a href="#"><label>test</label></a></li>
 
-        <li class="dropdown"><a class="dropbtn"><img src="../IMG/parametre.png"></a>
+        <li class="dropdown-param"><a class="dropbtn-param"><img src="../IMG/parametre.png"></a>
             <div class="dropdown-content-param">
                 <a href="register.php">register</a>
                 <a href="login.php">login</a>
