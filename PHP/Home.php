@@ -19,23 +19,28 @@ if (isset($_SESSION['user_id'])) {
     <title>Stream</title>
 </head>
 <body>
-<div id="menu">
-    <ul>
-        <li><a href="Home.php"><li><label>Home</label></a></li>
-        <li class="dropdown"><a class="dropbtn"></a><label>Categorie</label>
-            <div class="dropdown-content">
-                <a href="#"><label>Film</label></a>
-                <a href="#"><label>Serie</label></a>
-            </div>
-        </li>
-        <li><a href="#"><label>test</label></a></li>
-        <li class="dropdown-param"><a class="dropbtn-param"><img src="../IMG/parametre.png"></a>
-            <div class="dropdown-content-param">
-                <a href="register.php">register</a>
-                <a href="login.php">login</a>
-            </div>
-        </li>
-    </ul>
+<div class="menu">
+    <nav class="main_nav">
+        <div class="menu_navig">
+            <ul>
+                <li><a href="Home.php">Home</a></li>
+                <li>
+                    <a href="#">Categorie</a>
+                    <ul class="dropdown">
+                        <li><a href="#Films"></a></li>
+                        <li><a href="#Series"></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><label>test</label></a></li>
+                <li class="dropdown-param"><a class="dropbtn-param"><img src="../IMG/parametre.png"></a>
+                    <div class="dropdown-content-param">
+                        <a href="register.php">register</a>
+                        <a href="login.php">login</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>
 <div class="container">
     <h3>Hello <?php echo $user->name ?>,</h3>
