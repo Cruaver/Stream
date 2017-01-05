@@ -9,6 +9,7 @@
 if ($_SESSION['user_id'] != "") {
     header("Location: Home_loged.php");
 }
+echo $_SESSION['user_id'];
 ?>
 
 <!doctype html>
