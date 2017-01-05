@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: kabro_c
+ * Date: 05/01/17
+ * Time: 10:50
+ */
 
 require_once("session.php");
 
@@ -83,8 +89,6 @@ $userRow = $stmt->fetch(PDO::FETCH_ASSOC);
         <p class="h4">Another Secure Profile Page</p>
 
         <p class="blockquote-reverse" style="margin-top:200px;">
-            Programming Blog Featuring Tutorials on PHP, MySQL, Ajax, jQuery, Web Design and More...<br/><br/>
-            <a href="http://www.codingcage.com/2015/04/php-login-and-registration-script-with.html">tutorial link</a>
         </p>
 
     </div>

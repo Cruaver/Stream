@@ -1,6 +1,12 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: kabro_c
+ * Date: 05/01/17
+ * Time: 10:50
+ */
 
-require_once('dbconfig.php');
+require_once('Database.php');
 
 class USER
 {	

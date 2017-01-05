@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: kabro_c
+ * Date: 05/01/17
+ * Time: 10:50
+ */
 
 require_once("session.php");
 
@@ -54,9 +60,9 @@ $userRow = $stmt->fetch(PDO::FETCH_ASSOC);
                         <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_email']; ?>
                         &nbsp;<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="../../../Downloads/Login-Signup-PDO-OOP/profile.php"><span
+                        <li><a href="profile.php"><span
                                         class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
-                        <li><a href="../../../Downloads/Login-Signup-PDO-OOP/logout.php?logout=true"><span
+                        <li><a href="logout.php?logout=true"><span
                                         class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
                     </ul>
                 </li>
@@ -78,7 +84,7 @@ $userRow = $stmt->fetch(PDO::FETCH_ASSOC);
 
         <h1>
             <a href="home.php"><span class="glyphicon glyphicon-home"></span> home</a> &nbsp;
-            <a href="../../../Downloads/Login-Signup-PDO-OOP/profile.php"><span class="glyphicon glyphicon-user"></span>
+            <a href="profile.php"><span class="glyphicon glyphicon-user"></span>
                 profile</a></h1>
         <hr/>
 
@@ -87,7 +93,6 @@ $userRow = $stmt->fetch(PDO::FETCH_ASSOC);
 
         <p class="blockquote-reverse" style="margin-top:200px;">
             Programming Blog Featuring Tutorials on PHP, MySQL, Ajax, jQuery, Web Design and More...<br/><br/>
-            <a href="http://www.codingcage.com/2015/04/php-login-and-registration-script-with.html">tutorial link</a>
         </p>
 
     </div>

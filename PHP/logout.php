@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: kabro_c
+ * Date: 05/01/17
+ * Time: 10:50
+ */
+
 	require_once('session.php');
 	require_once('class.user.php');
 	$user_logout = new USER();
