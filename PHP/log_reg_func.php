@@ -25,7 +25,7 @@ function Register($name, $email, $username, $password) {
 function isUsername($username) {
     try {
         $db = DB();
-        $query = $db->prepare("SELECT user_id FROM users WHERE username=:username");
+        $query = $db->prepare("SELECT user_id FROM utilisateur WHERE username=:username");
         $query->bindParam("username", $username, PDO::PARAM_STR);
         $query->execute();
         if ($query->rowCount() > 0) {
@@ -41,7 +41,7 @@ function isUsername($username) {
 function isEmail($email) {
     try {
         $db = DB();
-        $query = $db->prepare("SELECT user_id FROM users WHERE email=:email");
+        $query = $db->prepare("SELECT user_id FROM utilisateur WHERE email=:email");
         $query->bindParam("email", $email, PDO::PARAM_STR);
         $query->execute();
         if ($query->rowCount() > 0) {
@@ -57,7 +57,7 @@ function isEmail($email) {
 function Login($username, $password) {
     try {
         $db = DB();
-        $query = $db->prepare("SELECT user_id FROM users WHERE (username=:username OR email=:username) AND password=:password");
+        $query = $db->prepare("SELECT user_id FROM utilisateur WHERE (username=:username OR email=:username) AND password=:password");
         $query->bindParam("username", $username, PDO::PARAM_STR);
         $enc_password = hash('sha256', $password);
         $query->bindParam("password", $enc_password, PDO::PARAM_STR);
@@ -76,7 +76,7 @@ function Login($username, $password) {
 function UserDetails($user_id) {
     try {
         $db = DB();
-        $query = $db->prepare("SELECT user_id, name, username, email FROM users WHERE user_id=:user_id");
+        $query = $db->prepare("SELECT user_id, name, username, email FROM utilisateur WHERE user_id=:user_id");
         $query->bindParam("user_id", $user_id, PDO::PARAM_STR);
         $query->execute();
         if ($query->rowCount() > 0) {
