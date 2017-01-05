@@ -50,7 +50,7 @@ session_start();
         <?php
             if(isset($_SESSION['user_id'])) {
                 $user = UserDetails($_SESSION['user_id']);
-                echo $user->name;
+                echo $user->name . ",";
         } else if (empty($_SESSION['user_id']))
             echo " new visitor,";
         ?>
