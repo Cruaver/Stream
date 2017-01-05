@@ -44,9 +44,6 @@ $user = UserDetails($_SESSION['user_id']);
     </ul>
 </div>
 <div class="container">
-    <h2>
-        Profile
-    </h2>
     <h3>Hello <?php echo $user->name ?>,</h3>
     <p>
         testetesteteetteetehggewhhguihejoeuhguirehgeuhuigrherghgerhogrr\gergergerreggrrg
