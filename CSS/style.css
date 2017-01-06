@@ -197,8 +197,8 @@ div#contain1 a:hover{
 }
 
 div#contain1 .image {
-    width: 100px;
-    height: 100px;
+    width: 70%;
+    height: 70%;
     margin-left: 15%;
-    padding-top: 15%;
+    padding-top: 4%;
 }
