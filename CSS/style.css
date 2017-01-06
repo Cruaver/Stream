@@ -212,7 +212,7 @@ div#contain1 {
 /* back */
 
 .back {
-
+    backface-visibility: hidden;
 }
 
 /* front */
