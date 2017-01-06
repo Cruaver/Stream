@@ -6,8 +6,8 @@
  * Time: 13:11
  */
 
-require("log_reg_func.php");
-require("./Database.php");
+require ("get_db_func.php");
+require ("log_reg_func.php");
 
 session_start();
 
@@ -68,6 +68,10 @@ session_start();
         </figure>
     </div>
     <div id="contain1">
+        <?php
+        $res = get_last();
+        while ($res = $query->fetch()) {
+        ?>
         <a href="#test">
             <div class="card">
                 <div class="content">
@@ -82,99 +86,15 @@ session_start();
                     <div class="back">
                         <p>
                             <strong>VAIANA</strong>
-                            <h4>De John Musker, Ron Clements</h4>
-                            <h4>Avec Cerise Calixte, Anthony Kavanagh, Mareva Galanter</h4>
-                            <h4>Sorti le 30 novembre 2016</h4>
+                        <h4>De John Musker, Ron Clements</h4>
+                        <h4>Avec Cerise Calixte, Anthony Kavanagh, Mareva Galanter</h4>
+                        <h4>Sorti le 30 novembre 2016</h4>
                         </p>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="#test">
-            <div class="card">
-                <div class="content">
-                    <div class="front">
-                        <div>
-                            <img class="image"
-                                 src="http://t1.gstatic.com/images?q=tbn:ANd9GcQDf4I5-8xPyu2RSTWz1yPlbBsWfAhv63ZoLeUTuVt7DYOP1d65"
-                                 alt="Vaiana film affiche">
-                            <p><strong>Vaiana</strong></p>
-                        </div>
-                    </div>
-                    <div class="back">
-                        Back!
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#test">
-            <div class="card">
-                <div class="content">
-                    <div class="front">
-                        <div>
-                            <img class="image"
-                                 src="http://t1.gstatic.com/images?q=tbn:ANd9GcQDf4I5-8xPyu2RSTWz1yPlbBsWfAhv63ZoLeUTuVt7DYOP1d65"
-                                 alt="Vaiana film affiche">
-                            <p><strong>Vaiana</strong></p>
-                        </div>
-                    </div>
-                    <div class="back">
-                        Back!
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#test">
-            <div class="card">
-                <div class="content">
-                    <div class="front">
-                        <div>
-                            <img class="image"
-                                 src="http://t1.gstatic.com/images?q=tbn:ANd9GcQDf4I5-8xPyu2RSTWz1yPlbBsWfAhv63ZoLeUTuVt7DYOP1d65"
-                                 alt="Vaiana film affiche">
-                            <p><strong>Vaiana</strong></p>
-                        </div>
-                    </div>
-                    <div class="back">
-                        Back!
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#test">
-            <div class="card">
-                <div class="content">
-                    <div class="front">
-                        <div>
-                            <img class="image"
-                                 src="http://t1.gstatic.com/images?q=tbn:ANd9GcQDf4I5-8xPyu2RSTWz1yPlbBsWfAhv63ZoLeUTuVt7DYOP1d65"
-                                 alt="Vaiana film affiche">
-                            <p><strong>Vaiana</strong></p>
-                        </div>
-                    </div>
-                    <div class="back">
-                        Back!
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#test">
-            <div class="card">
-                <div class="content">
-                    <div class="front">
-                        <div>
-                            <img class="image"
-                                 src="http://t1.gstatic.com/images?q=tbn:ANd9GcQDf4I5-8xPyu2RSTWz1yPlbBsWfAhv63ZoLeUTuVt7DYOP1d65"
-                                 alt="Vaiana film affiche">
-                            <p><strong>Vaiana</strong></p>
-                        </div>
-                    </div>
-                    <div class="back">
-                        Back!
-                    </div>
-                </div>
-            </div>
-        </a>
+        <?php  } ?>
     </div>
 </div>
 </body>

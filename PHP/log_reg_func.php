@@ -6,6 +6,8 @@
  * Time: 12:56
  */
 
+require("./Database.php");
+
 function Register($name, $email, $username, $password) {
     try {
         $db = DB();
@@ -16,7 +18,7 @@ function Register($name, $email, $username, $password) {
         $enc_password = hash('sha256', $password);
         $query->bindParam("password", $enc_password, PDO::PARAM_STR);
         $query->execute();
-        return $db->lastInsertId();
+        return ($db->lastInsertId());
     } catch (PDOException $e) {
         exit($e->getMessage());
     }
@@ -29,9 +31,9 @@ function isUsername($username) {
         $query->bindParam("username", $username, PDO::PARAM_STR);
         $query->execute();
         if ($query->rowCount() > 0) {
-            return true;
+            return (true);
         } else {
-            return false;
+            return (false);
         }
     } catch (PDOException $e) {
         exit($e->getMessage());
@@ -45,9 +47,9 @@ function isEmail($email) {
         $query->bindParam("email", $email, PDO::PARAM_STR);
         $query->execute();
         if ($query->rowCount() > 0) {
-            return true;
+            return (true);
         } else {
-            return false;
+            return (false);
         }
     } catch (PDOException $e) {
         exit($e->getMessage());
@@ -64,9 +66,9 @@ function Login($username, $password) {
         $query->execute();
         if ($query->rowCount() > 0) {
             $result = $query->fetch(PDO::FETCH_OBJ);
-            return $result->user_id;
+            return ($result->user_id);
         } else {
-            return false;
+            return (false);
         }
     } catch (PDOException $e) {
         exit($e->getMessage());
@@ -80,7 +82,7 @@ function UserDetails($user_id) {
         $query->bindParam("user_id", $user_id, PDO::PARAM_STR);
         $query->execute();
         if ($query->rowCount() > 0) {
-            return $query->fetch(PDO::FETCH_OBJ);
+            return ($query->fetch(PDO::FETCH_OBJ));
         }
     } catch (PDOException $e) {
         exit($e->getMessage());
