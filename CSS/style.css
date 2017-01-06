@@ -188,6 +188,7 @@ div#contain1 a:link, #contain1 a:visited {
     background: rgba(172, 172, 172, 0.25);
     float: left;
     border-radius: 12px;
+    text-decoration: none;
 }
 
 div#contain1 a:hover{
@@ -201,4 +202,8 @@ div#contain1 .image {
     height: 70%;
     margin-left: 15%;
     padding-top: 4%;
+}
+
+div#contain1 p strong {
+
 }
