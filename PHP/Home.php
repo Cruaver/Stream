@@ -68,11 +68,20 @@ session_start();
         </figure>
     </div>
     <div id="contain1">
-        <div>
-            <a href="#"><img class="image"
-                             src="http://t1.gstatic.com/images?q=tbn:ANd9GcQDf4I5-8xPyu2RSTWz1yPlbBsWfAhv63ZoLeUTuVt7DYOP1d65"
-                             alt="Vaiana film affiche">
-                <p><strong>Vaiana</strong></p></a>
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <div>
+                        <a href="#"><img class="image"
+                                         src="http://t1.gstatic.com/images?q=tbn:ANd9GcQDf4I5-8xPyu2RSTWz1yPlbBsWfAhv63ZoLeUTuVt7DYOP1d65"
+                                         alt="Vaiana film affiche">
+                            <p><strong>Vaiana</strong></p></a>
+                    </div>
+                </div>
+                <div class="back">
+                    Back!
+                </div>
+            </div>
         </div>
         <div>
             <a href="#"><img class="image"
