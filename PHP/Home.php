@@ -87,9 +87,9 @@ session_start();
                         <div class="back">
                             <p>
                                 <strong><?php echo $res[$i]['Titre']; ?></strong>
-                            <h4>De <?php echo $res[$i]['Realisateur']; ?></h4>
-                            <h4>Avec <?php echo $res[$i]['Acteur']; ?></h4>
-                            <h4>Sorti le <?php echo $res[$i]['Date_sorti']; ?></h4>
+                            <h4>De : <?php echo $res[$i]['Realisateur']; ?></h4>
+                            <h4>Avec : <?php echo $res[$i]['Acteur']; ?></h4>
+                            <h4>Sorti : <?php echo $res[$i]['Date_sorti']; ?></h4>
                             </p>
                         </div>
                     </div>
@@ -119,9 +119,9 @@ session_start();
                         <div class="back">
                             <p>
                                 <strong><?php echo $res[$i]['Titre']; ?></strong>
-                            <h4>De <?php echo $res[$i]['Realisateur']; ?></h4>
-                            <h4>Avec <?php echo $res[$i]['Acteur']; ?></h4>
-                            <h4>Sorti le <?php echo $res[$i]['Date_sorti']; ?></h4>
+                            <h4>De : <?php echo $res[$i]['Realisateur']; ?></h4>
+                            <h4>Avec : <?php echo $res[$i]['Acteur']; ?></h4>
+                            <h4>Sorti : <?php echo $res[$i]['Date_sorti']; ?></h4>
                             </p>
                         </div>
                     </div>
