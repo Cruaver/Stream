@@ -7,7 +7,7 @@
  */
 
 include("log_reg_func.php");
-include("/Database.php");
+include("Database.php");
 
 session_start();
 $db = DB();
