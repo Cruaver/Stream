@@ -251,7 +251,6 @@ div#contain1 {
 }
 
 .back {
-    background: #03446A;
     color: white;
     transform: rotateY( 180deg );
 }
