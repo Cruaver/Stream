@@ -95,11 +95,9 @@ session_start();
                     </div>
                 </div>
             </a>
-        <?php
-        $i = $i +1;
+            <?php
+            $i = $i + 1;
         } ?>
-    </div>
-    <div id="contain1">
         <h2>Les Dernier Serie</h2>
         <?php
         $res = get_last("serie");
@@ -129,7 +127,7 @@ session_start();
                 </div>
             </a>
             <?php
-            $i = $i +1;
+            $i = $i + 1;
         } ?>
     </div>
 </div>
