@@ -212,6 +212,7 @@ div#contain1 {
 /* back */
 
 .back {
+    position: absolute;
     backface-visibility: hidden;
 }
 
@@ -220,6 +221,7 @@ div#contain1 {
 .front {
     height: 100%;
     width: 100%;
+    position: absolute;
     backface-visibility: hidden;
 }
 
