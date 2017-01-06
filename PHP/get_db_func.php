@@ -14,7 +14,7 @@ function get_last(){
         $query = $db->prepare("SELECT * FROM Film_info AS FIF JOIN Films AS FIL ON FIF.ID = FIL.ID_info ORDER BY Date_sorti DESC ");
         $query->execute();
         if ($query->rowCount() > 0) {
-            return ($query->fetch(PDO::FETCH_OBJ));
+            return ($query->fetchAll(PDO::FETCH_OBJ));
         }
     } catch (PDOException $e) {
         exit($e->getMessage());
