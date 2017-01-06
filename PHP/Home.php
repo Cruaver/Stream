@@ -93,7 +93,7 @@ session_start();
             </div>
         </a>
         <?php
-        echo $res['Titre'][0];
+        echo $res['Titre'];
         ?>
     </div>
 </div>
