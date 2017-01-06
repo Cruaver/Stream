@@ -98,7 +98,8 @@ session_start();
             <?php
             $i = $i + 1;
         } ?>
-        <h2>Les Dernier Serie</h2>
+        <br>
+        <h2>Les Derniere series</h2>
         <?php
         $res = get_last("serie");
         $i = 0;
