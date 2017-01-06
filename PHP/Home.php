@@ -70,7 +70,7 @@ session_start();
     <div id="contain1">
         <?php
         $res = get_last();
-        while ($res = $query->fetch()) {
+        while (isset($res)) {
         ?>
         <a href="#test">
             <div class="card">
