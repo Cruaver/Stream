@@ -6,8 +6,8 @@
  * Time: 13:11
  */
 
-require ("get_db_func.php");
-require ("log_reg_func.php");
+require("get_db_func.php");
+require("log_reg_func.php");
 
 session_start();
 
@@ -70,7 +70,8 @@ session_start();
     <div id="contain1">
         <?php
         $res = get_last();
-        while (isset($res)) {
+        print_r($res);
+        //while (isset($res[$i])) {
         ?>
         <a href="#test">
             <div class="card">
@@ -94,7 +95,9 @@ session_start();
                 </div>
             </div>
         </a>
-        <?php  } ?>
+        <?php
+        //$i = $i + 1}
+        ?>
     </div>
 </div>
 </body>
