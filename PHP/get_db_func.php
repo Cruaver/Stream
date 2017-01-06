@@ -6,7 +6,7 @@
  * Time: 11:39
  */
 
-include("Database.php");
+include('./Database.php');
 
 function get_last(){
     try {

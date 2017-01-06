@@ -6,12 +6,11 @@
  * Time: 13:11
  */
 
-include("get_db_func.php");
-include("log_reg_func.php");
-include("Database.php");
+include("./get_db_func.php");
+include("./log_reg_func.php");
+include("./Database.php");
 
 session_start();
-
 ?>
 
 <!doctype html>
