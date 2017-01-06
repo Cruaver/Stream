@@ -90,7 +90,7 @@ if (empty($_GET['ID'])){
             <?php
             if (isset($res['avent_premiere'])) {
                 ?>
-                <p>Avent premiere : <?php $res['avent_premiere']; ?></p>
+                <p>Avent premiere : <?php echo $res['avent_premiere']; ?></p>
                 <?php
             }
             ?>
