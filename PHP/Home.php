@@ -68,11 +68,6 @@ session_start();
         </figure>
     </div>
     <div id="contain1">
-        <?php
-        $res = get_last();
-        print_r($res);
-        //while (isset($res[$i])) {
-        ?>
         <a href="#test">
             <div class="card">
                 <div class="content">
