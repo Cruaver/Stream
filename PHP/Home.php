@@ -62,7 +62,7 @@ session_start();
         <div class="C_contain1"></div>
         <div class="slider">
             <figure>
-            <a href="#top1"<img
+            <a href="#top1"><img
                     src="http://img01.deviantart.net/52e5/i/2016/064/2/1/pokemon_moon_wallpaper__8_5__by_nicholas_checchia-d9u159b.png"></a>
             </figure>
             <figure>
