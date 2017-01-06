@@ -15,7 +15,7 @@ function DB()
     $DB = "Stream";
 
     try {
-        $db = new PDO('mysql:host=' . $Host . ';dbname=' . $DB . '', $User, $Pass);
+        $db = new PDO('mysql:host=' . $Host . ';dbname=' . $DB . '', $User, $Pass, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
         return ($db);
     } catch (PDOException $e) {
         return ("Error!: " . $e->getMessage());
