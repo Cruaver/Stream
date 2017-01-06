@@ -68,33 +68,33 @@ session_start();
     </div>
     <div id="contain1">
         <?php
-            $res = get_last();
-        ?>
-        <a href="#test">
-            <div class="card">
-                <div class="content">
-                    <div class="front">
-                        <div>
-                            <img class="image"
-                                 src="http://t1.gstatic.com/images?q=tbn:ANd9GcQDf4I5-8xPyu2RSTWz1yPlbBsWfAhv63ZoLeUTuVt7DYOP1d65"
-                                 alt="Vaiana film affiche">
-                            <p><strong>Vaiana</strong></p>
+        $res = get_last();
+        $i = 0;
+        while (isset($res)) {
+            ?>
+            <a href="#<?php echo $res[$i]['Name']; ?>">
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <div>
+                                <img class="image"
+                                     src="<?php echo $res[$i]['image']; ?>"
+                                     alt="<?php echo $res[$i]['Name']; ?>">
+                                <p><strong><?php echo $res[$i]['Name']; ?></strong></p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <p>
+                                <strong><?php echo $res[$i]['Titre']; ?></strong>
+                            <h4>De <?php echo $res[$i]['Realisateur']; ?></h4>
+                            <h4>Avec <?php echo $res[$i]['Acteur']; ?></h4>
+                            <h4>Sorti le <?php echo $res[$i]['Date_sorti']; ?></h4>
+                            </p>
                         </div>
                     </div>
-                    <div class="back">
-                        <p>
-                            <strong>VAIANA</strong>
-                        <h4>De John Musker, Ron Clements</h4>
-                        <h4>Avec Cerise Calixte, Anthony Kavanagh, Mareva Galanter</h4>
-                        <h4>Sorti le 30 novembre 2016</h4>
-                        </p>
-                    </div>
                 </div>
-            </div>
-        </a>
-        <?php
-        echo $res[0]['Titre'];
-        ?>
+            </a>
+        <?php } ?>
     </div>
 </div>
 </body>
