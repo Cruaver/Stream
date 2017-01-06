@@ -142,7 +142,7 @@ div#slider {
     width: 80%;
     max-width: 1000px;
     overflow: hidden;
-    margin: auto 15%;
+    margin: auto 14%;
 }
 
 div#slider figure {
@@ -180,12 +180,12 @@ div#contain1 {
 }
 
 div#contain1 a:link, #contain1 a:visited {
-    margin-top: 3% !important;
+    margin-top: 3%;
+    margin-left: 14vh;
     width: 140px;
     height: 215px;
     color: black;
     background: rgba(172, 172, 172, 0.25);
-    margin: 9%;
     float: left;
     border-radius: 12px;
 }
