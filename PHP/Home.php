@@ -67,8 +67,9 @@ session_start();
         </figure>
     </div>
     <div id="contain1">
+        <h2>Les dernier film</h2>
         <?php
-        $res = get_last();
+        $res = get_last("film");
         $i = 0;
         while (isset($res[$i])) {
             ?>
@@ -96,6 +97,39 @@ session_start();
             </a>
         <?php
         $i = $i +1;
+        } ?>
+    </div>
+    <div id="contain1">
+        <h2>Les Dernier Serie</h2>
+        <?php
+        $res = get_last("serie");
+        $i = 0;
+        while (isset($res[$i])) {
+            ?>
+            <a href="#<?php echo $res[$i]['Name']; ?>">
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <div>
+                                <img class="image"
+                                     src="<?php echo $res[$i]['image']; ?>"
+                                     alt="<?php echo $res[$i]['Name']; ?>">
+                                <p><strong><?php echo $res[$i]['Name']; ?></strong></p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <p>
+                                <strong><?php echo $res[$i]['Titre']; ?></strong>
+                            <h4>De <?php echo $res[$i]['Realisateur']; ?></h4>
+                            <h4>Avec <?php echo $res[$i]['Acteur']; ?></h4>
+                            <h4>Sorti le <?php echo $res[$i]['Date_sorti']; ?></h4>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <?php
+            $i = $i +1;
         } ?>
     </div>
 </div>
