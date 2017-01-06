@@ -6,8 +6,8 @@
  * Time: 12:53
  */
 
-include('./log_reg_func.php');
-include('./Database.php');
+require('./log_reg_func.php');
+require('./Database.php');
 
 session_start();
 $db = DB();
