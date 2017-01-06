@@ -70,7 +70,7 @@ session_start();
         <?php
         $res = get_last();
         $i = 0;
-        while (isset($res)) {
+        while (isset($res[$i])) {
             ?>
             <a href="#<?php echo $res[$i]['Name']; ?>">
                 <div class="card">
@@ -94,7 +94,9 @@ session_start();
                     </div>
                 </div>
             </a>
-        <?php } ?>
+        <?php
+        $i = $i +1;
+        } ?>
     </div>
 </div>
 </body>
