@@ -190,13 +190,23 @@ div#slider figure img {
 
 /* Contain 1 */
 
+div#contain1 {
+    margin: auto;
+    height: 390px;
+}
+
 /* flipe */
 
 .card {
+    margin-top: 3%;
+    margin-left: 15vh;
     width: 21%;
     height: 215px;
+    color: black;
+    background: rgba(172, 172, 172, 0.25);
     float: left;
-    perspective: 500px;
+    border-radius: 12px;
+    text-decoration: none;
 }
 
 /* back */
@@ -211,6 +221,13 @@ div#slider figure img {
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
+}
+
+.front .image {
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+    padding-top: 4%;
 }
 
 .content {
