@@ -67,7 +67,7 @@ session_start();
                         src="http://img01.deviantart.net/52e5/i/2016/064/2/1/pokemon_moon_wallpaper__8_5__by_nicholas_checchia-d9u159b.png"></a>
         </figure>
     </div>
-    <div id="contain 1">
+    <div id="contain1">
         <div>
             <a href="#"><img class="image"
                              src="http://t1.gstatic.com/images?q=tbn:ANd9GcQDf4I5-8xPyu2RSTWz1yPlbBsWfAhv63ZoLeUTuVt7DYOP1d65"
