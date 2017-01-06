@@ -24,7 +24,7 @@ session_start();
 <div id="menu">
     <ul>
         <li><a href="Home.php">Home</a></li>
-        <li class="dropdown"><a class="dropbtn">Categorie</a>
+        <li class="dropdown"><a>Categorie</a>
             <div class="dropdown-content">
                 <a href="#">Film</a>
                 <a href="#">Serie</a>
