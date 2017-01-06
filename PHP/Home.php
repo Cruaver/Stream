@@ -80,7 +80,12 @@ session_start();
                         </div>
                     </div>
                     <div class="back">
-                        Back!
+                        <p>
+                            <strong>VAIANA</strong>
+                            <h4>De John Musker, Ron Clements</h4>
+                            <h4>Avec Cerise Calixte, Anthony Kavanagh, Mareva Galanter</h4>
+                            <h4>Sorti le 30 novembre 2016</h4>
+                        </p>
                     </div>
                 </div>
             </div>
