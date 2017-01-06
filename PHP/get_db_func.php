@@ -6,7 +6,7 @@
  * Time: 11:39
  */
 
-require('./Database.php');
+require_once('./Database.php');
 
 function get_last(){
     try {
