@@ -136,7 +136,7 @@ h3 {
     display: block;
 }
 
-/* Contain 1*/
+/* Slider */
 
 div#slider {
     width: 80%;
@@ -172,4 +172,34 @@ div#slider figure img {
     100% { left: -300%; }
 }
 
-/* Contain 2 */
+/* Contain 1 */
+
+div#contain1 {
+    margin-top: 10%;
+    margin: auto;
+    height: 390px;
+    background-color: rgb(192,192,192);
+    overflow-y: scroll;
+}
+
+div#contain1 a:link, #contain1 a:visited {
+    width: 140px;
+    height: 215px;
+    color: rgb(122,0,254);
+    background: rgb(172,172,172);
+    margin: 5%;
+    float: left;
+    border-radius: 12px;
+}
+
+div#contain1 a:hover{
+    color: rgb(122,0,254);
+    background: rgb(152,152,152);
+    border-radius: 12px;
+}
+
+div#contain1 .image {
+    width: 100px;
+    height: 100px;
+    margin-left: 21px;
+}
