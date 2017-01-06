@@ -1,5 +1,6 @@
 body {
     color: white;
+    margin: auto 15%;
 }
 
 html {
@@ -141,6 +142,7 @@ div#slider {
     width: 80%;
     max-width: 1000px;
     overflow: hidden;
+    margin: auto 15%;
 }
 
 div#slider figure {
@@ -161,14 +163,13 @@ div#slider figure img {
 
 @keyframes slider {
     0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
+    25% { left: 0%; }
+    50% { left: -100%; }
+    75% { left: -100%; }
+    80% { left: -200%; }
+    90% { left: -300%; }
+    95% { left: -200%; }
+    100% { left: -300%; }
 }
 
 /* Contain 2 */
