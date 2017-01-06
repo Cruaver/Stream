@@ -228,7 +228,6 @@ div#contain1 p strong {
 /* flipe */
 
 .card {
-    position: absolute;
     top: 50%;
     left: 50%;
     width: 300px;
@@ -239,7 +238,6 @@ div#contain1 p strong {
 }
 
 .content {
-    position: absolute;
     width: 100%;
     height: 100%;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
