@@ -199,5 +199,6 @@ div#contain1 a:hover{
 div#contain1 .image {
     width: 100px;
     height: 100px;
-    margin-left: 21px;
+    margin-left: 15%;
+    padding-top: 15%;
 }
