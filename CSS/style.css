@@ -190,41 +190,6 @@ div#slider figure img {
 
 /* Contain 1 */
 
-div#contain1 {
-    margin: auto;
-    height: 390px;
-}
-
-div#contain1 a:link, #contain1 a:visited {
-    margin-top: 3%;
-    margin-left: 15vh;
-    width: 21%;
-    height: 215px;
-    color: black;
-    background: rgba(172, 172, 172, 0.25);
-    float: left;
-    border-radius: 12px;
-    text-decoration: none;
-}
-
-div#contain1 a:hover {
-    color: rgb(122, 0, 254);
-    background: rgb(152, 152, 152);
-    border-radius: 12px;
-}
-
-div#contain1 .image {
-    width: 70%;
-    height: 70%;
-    margin-left: 15%;
-    padding-top: 4%;
-}
-
-div#contain1 p strong {
-    color: #cfcfcb;
-    margin-left: 39%;
-}
-
 /* flipe */
 
 .card {
@@ -234,7 +199,15 @@ div#contain1 p strong {
     perspective: 500px;
 }
 
-.front, .back {
+/* back */
+
+.back {
+
+}
+
+/* front */
+
+.front {
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
@@ -249,12 +222,11 @@ div#contain1 p strong {
     transform-style: preserve-3d;
 }
 
-/*
 .card:hover .content {
     transform: rotateY( 180deg ) ;
     transition: transform 0.5s;
 }
-*/
+
 .back {
     background: #03446A;
     color: white;
