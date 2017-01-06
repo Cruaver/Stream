@@ -35,3 +35,31 @@ function get_last($categ)
         }
     }
 }
+
+function get_info_id($categ, $ID){
+    if ($categ == "film")
+        try {
+            $db = DB();
+            $query = $db->prepare("SELECT * FROM Film_info AS FIF JOIN Films AS FIL ON FIF.ID = FIL.ID_info WHERE FIF.ID = :ID ");
+            $query->bindParam("ID", $ID, PDO::PARAM_STR);
+            $query->execute();
+            if ($query->rowCount() > 0) {
+                return ($query->fetch());
+            }
+        } catch (PDOException $e) {
+            exit($e->getMessage());
+        }
+    else if ($categ == "serie") {
+        try {
+            $db = DB();
+            $query = $db->prepare("SELECT * FROM Series_info AS SIF JOIN Series AS SRS ON SIF.ID = SRS.ID_info WHERE SIF.ID = :ID");
+            $query->bindParam("ID", $ID, PDO::PARAM_STR);
+            $query->execute();
+            if ($query->rowCount() > 0) {
+                return ($query->fetch());
+            }
+        } catch (PDOException $e) {
+            exit($e->getMessage());
+        }
+    }
+}

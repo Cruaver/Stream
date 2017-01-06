@@ -73,7 +73,7 @@ session_start();
         $i = 0;
         while (isset($res[$i])) {
             ?>
-            <a href="#<?php echo $res[$i]['Name']; ?>">
+            <a href="Film_info.php?ID=<?php echo $res[$i]['ID']; ?>">
                 <div class="card">
                     <div class="content">
                         <div class="front">
@@ -105,7 +105,7 @@ session_start();
         $i = 0;
         while (isset($res[$i])) {
             ?>
-            <a href="#<?php echo $res[$i]['Name']; ?>">
+            <a href="Film_info.php?ID=<?php echo $res[$i]['ID']; ?>">
                 <div class="card">
                     <div class="content">
                         <div class="front">
