@@ -235,8 +235,6 @@ div#contain1 p strong {
 }
 
 .front, .back {
-    height: 100%;
-    width: 100%;
     background: white;
     line-height: 300px;
     color: #03446A;
