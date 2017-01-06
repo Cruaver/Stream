@@ -6,7 +6,7 @@
  * Time: 12:56
  */
 
-require("./Database.php");
+include("./Database.php");
 
 function Register($name, $email, $username, $password) {
     try {
