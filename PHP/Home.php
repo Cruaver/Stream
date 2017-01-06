@@ -110,7 +110,7 @@ session_start();
                         <div class="front">
                             <div>
                                 <img class="image"
-                                     src="<?php echo $res[$i]['image']; ?>"
+                                     src="<?php echo $res[$i]['Image']; ?>"
                                      alt="<?php echo $res[$i]['Name']; ?>">
                                 <p><strong><?php echo $res[$i]['Name']; ?></strong></p>
                             </div>
