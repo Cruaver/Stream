@@ -139,10 +139,10 @@ h3 {
 /* Slider */
 
 div#slider {
-    width: 80%;
+    width: 85%;
     max-width: 1000px;
     overflow: hidden;
-    margin: auto 14%;
+    margin: auto 12%;
 }
 
 div#slider figure {
@@ -181,8 +181,8 @@ div#contain1 {
 
 div#contain1 a:link, #contain1 a:visited {
     margin-top: 3%;
-    margin-left: 14vh;
-    width: 140px;
+    margin-left: 15vh;
+    width: 21%;
     height: 215px;
     color: black;
     background: rgba(172, 172, 172, 0.25);
