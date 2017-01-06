@@ -90,9 +90,6 @@ session_start();
                 </div>
             </div>
         </a>
-        <?php
-        //$i = $i + 1}
-        ?>
     </div>
 </div>
 </body>
