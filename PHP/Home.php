@@ -67,6 +67,9 @@ session_start();
         </figure>
     </div>
     <div id="contain1">
+        <?php
+            $res = get_last();
+        ?>
         <a href="#test">
             <div class="card">
                 <div class="content">
@@ -89,6 +92,9 @@ session_start();
                 </div>
             </div>
         </a>
+        <?php
+        print_r($res);
+        ?>
     </div>
 </div>
 </body>
