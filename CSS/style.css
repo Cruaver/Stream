@@ -258,11 +258,12 @@ div#contain1 p strong {
     transform-style: preserve-3d;
 }
 
+/*
 .card:hover .content {
     transform: rotateY( 180deg ) ;
     transition: transform 0.5s;
 }
-
+*/
 .back {
     background: #03446A;
     color: white;
