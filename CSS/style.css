@@ -177,16 +177,15 @@ div#slider figure img {
 div#contain1 {
     margin: auto;
     height: 390px;
-    background-color: rgb(192,192,192);
-    overflow-y: scroll;
 }
 
 div#contain1 a:link, #contain1 a:visited {
+    margin-top: 3% !important;
     width: 140px;
     height: 215px;
-    color: rgb(122,0,254);
-    background: rgb(172,172,172);
-    margin: 5%;
+    color: black;
+    background: rgba(172, 172, 172, 0.25);
+    margin: 9%;
     float: left;
     border-radius: 12px;
 }
