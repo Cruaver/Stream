@@ -235,12 +235,8 @@ div#contain1 p strong {
 }
 
 .front, .back {
-    background: white;
-    line-height: 300px;
-    color: #03446A;
-    text-align: center;
-    font-size: 60px;
-    border-radius: 5px;
+    height: 100$;
+    width: 100%;
     backface-visibility: hidden;
 }
 
