@@ -6,11 +6,12 @@
  * Time: 12:56
  */
 
-require_once('./Database.php');
+include_once("Database.php");
 
 session_start();
 
-function Register($name, $email, $username, $password) {
+function Register($name, $email, $username, $password)
+{
     try {
         $db = DB();
         $query = $db->prepare("INSERT INTO utilisateur(name, email, username, password) VALUES (:name,:email,:username,:password)");
@@ -26,7 +27,8 @@ function Register($name, $email, $username, $password) {
     }
 }
 
-function isUsername($username) {
+function isUsername($username)
+{
     try {
         $db = DB();
         $query = $db->prepare("SELECT user_id FROM utilisateur WHERE username=:username");
@@ -42,7 +44,8 @@ function isUsername($username) {
     }
 }
 
-function isEmail($email) {
+function isEmail($email)
+{
     try {
         $db = DB();
         $query = $db->prepare("SELECT user_id FROM utilisateur WHERE email=:email");
@@ -58,7 +61,8 @@ function isEmail($email) {
     }
 }
 
-function Login($username, $password) {
+function Login($username, $password)
+{
     try {
         $db = DB();
         $query = $db->prepare("SELECT user_id FROM utilisateur WHERE (username=:username OR email=:username) AND password=:password");
@@ -77,7 +81,8 @@ function Login($username, $password) {
     }
 }
 
-function UserDetails($user_id) {
+function UserDetails($user_id)
+{
     try {
         $db = DB();
         $query = $db->prepare("SELECT user_id, name, username, email FROM utilisateur WHERE user_id=:user_id");
@@ -106,5 +111,4 @@ function is_admin()
     } catch (PDOException $e) {
         exit($e->getMessage());
     }
-}
 }
