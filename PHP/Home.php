@@ -80,8 +80,8 @@ session_start();
                             <div>
                                 <img class="image"
                                      src="<?php echo $res[$i]['image']; ?>"
-                                     alt="<?php echo $res[$i]['Name']; ?>">
-                                <p><strong><?php echo $res[$i]['Name']; ?></strong></p>
+                                     alt="<?php echo $res[$i]['Titre']; ?>">
+                                <p><strong><?php echo $res[$i]['Titre']; ?></strong></p>
                             </div>
                         </div>
                         <div class="back">
@@ -112,8 +112,8 @@ session_start();
                             <div>
                                 <img class="image"
                                      src="<?php echo $res[$i]['Image']; ?>"
-                                     alt="<?php echo $res[$i]['Name']; ?>">
-                                <p><strong><?php echo $res[$i]['Name']; ?></strong></p>
+                                     alt="<?php echo $res[$i]['Titre']; ?>">
+                                <p><strong><?php echo $res[$i]['Titre']; ?></strong></p>
                             </div>
                         </div>
                         <div class="back">

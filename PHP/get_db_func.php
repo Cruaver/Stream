@@ -14,7 +14,7 @@ function get_last($categ)
     if ($categ == "film")
         try {
             $db = DB();
-            $query = $db->prepare("SELECT * FROM Film_info AS FIF JOIN Films AS FIL ON FIF.ID = FIL.ID_info ORDER BY Date_sorti DESC ");
+            $query = $db->prepare("SELECT * FROM Film_info ORDER BY Date_sorti DESC LIMIT 6");
             $query->execute();
             if ($query->rowCount() > 0) {
                 return ($query->fetchAll());
@@ -25,7 +25,7 @@ function get_last($categ)
     else if ($categ == "serie") {
         try {
             $db = DB();
-            $query = $db->prepare("SELECT * FROM Series_info AS SIF JOIN Series AS SRS ON SIF.ID = SRS.ID_info ORDER BY Date_sorti DESC ");
+            $query = $db->prepare("SELECT * FROM Series_info ORDER BY Date_sorti DESC LIMIT 6");
             $query->execute();
             if ($query->rowCount() > 0) {
                 return ($query->fetchAll());
@@ -40,7 +40,7 @@ function get_info_id($categ, $ID){
     if ($categ == "film")
         try {
             $db = DB();
-            $query = $db->prepare("SELECT * FROM Film_info AS FIF JOIN Films AS FIL ON FIF.ID = FIL.ID_info WHERE FIF.ID = :ID ");
+            $query = $db->prepare("SELECT * FROM Film_info WHERE FIF.ID = :ID ");
             $query->bindParam("ID", $ID, PDO::PARAM_STR);
             $query->execute();
             if ($query->rowCount() > 0) {
@@ -52,7 +52,7 @@ function get_info_id($categ, $ID){
     else if ($categ == "serie") {
         try {
             $db = DB();
-            $query = $db->prepare("SELECT * FROM Series_info AS SIF JOIN Series AS SRS ON SIF.ID = SRS.ID_info WHERE SIF.ID = :ID");
+            $query = $db->prepare("SELECT * FROM Series_info WHERE SIF.ID = :ID");
             $query->bindParam("ID", $ID, PDO::PARAM_STR);
             $query->execute();
             if ($query->rowCount() > 0) {
