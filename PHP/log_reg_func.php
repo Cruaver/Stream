@@ -30,7 +30,7 @@ function isUsername($username) {
         $query = $db->prepare("SELECT user_id FROM utilisateur WHERE username=:username");
         $query->bindParam("username", $username, PDO::PARAM_STR);
         $query->execute();
-        if ($query->rowCount() > 0) {
+        if ($query->rowCount() == 0) {
             return (true);
         } else {
             return (false);
