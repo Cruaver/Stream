@@ -8,6 +8,8 @@
 
 require_once('./Database.php');
 
+session_start();
+
 function Register($name, $email, $username, $password) {
     try {
         $db = DB();
@@ -87,4 +89,22 @@ function UserDetails($user_id) {
     } catch (PDOException $e) {
         exit($e->getMessage());
     }
+}
+
+function is_admin()
+{
+    try {
+        $db = DB();
+        $query = $db->prepare("SELECT * FROM utilisateur WHERE ID=:ID AND Admin = 1");
+        $query->bindParam("ID", $_SESSION['user_id'], PDO::PARAM_STR);
+        $query->execute();
+        if ($query->rowCount() > 0) {
+            return (true);
+        } else {
+            return (false);
+        }
+    } catch (PDOException $e) {
+        exit($e->getMessage());
+    }
+}
 }

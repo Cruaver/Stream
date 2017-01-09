@@ -39,6 +39,10 @@ session_start();
                     <a href="login.php">login</a>
                 <?php } else if (isset($_SESSION['user_id'])) { ?>
                     <a href="logout.php" class="btn">Logout</a>
+                    <?php if (!is_admin()) { ?>
+                        <a href="#m_film" class="btn">Manage Film</a>
+                        <a href="#m_Serie" class="btn">Manage Series</a>
+                    <?php } ?>
                 <?php } ?>
             </div>
         </li>
