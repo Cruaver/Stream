@@ -40,7 +40,7 @@ function get_info_id($categ, $ID){
     if ($categ == "film")
         try {
             $db = DB();
-            $query = $db->prepare("SELECT * FROM Film_info WHERE FIF.ID = :ID ");
+            $query = $db->prepare("SELECT * FROM Film_info WHERE ID = :ID ");
             $query->bindParam("ID", $ID, PDO::PARAM_STR);
             $query->execute();
             if ($query->rowCount() > 0) {
@@ -52,7 +52,7 @@ function get_info_id($categ, $ID){
     else if ($categ == "serie") {
         try {
             $db = DB();
-            $query = $db->prepare("SELECT * FROM Series_info WHERE SIF.ID = :ID");
+            $query = $db->prepare("SELECT * FROM Series_info WHERE ID = :ID");
             $query->bindParam("ID", $ID, PDO::PARAM_STR);
             $query->execute();
             if ($query->rowCount() > 0) {
