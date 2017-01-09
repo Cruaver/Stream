@@ -129,7 +129,9 @@ session_start();
             </a>
             <?php
             $i = $i + 1;
-        } ?>
+        }
+        print_r($res);
+        ?>
     </div>
 </div>
 </body>
