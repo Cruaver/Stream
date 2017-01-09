@@ -6,7 +6,7 @@
  * Time: 11:39
  */
 
-require_once("Database.php");
+include_once("Database.php");
 
 function get_last($categ)
 {
