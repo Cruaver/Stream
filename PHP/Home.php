@@ -8,6 +8,7 @@
 
 require_once("get_db_func.php");
 require_once("log_reg_func.php");
+require_once("Database.php");
 
 session_start();
 ?>
