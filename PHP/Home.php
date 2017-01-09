@@ -6,8 +6,8 @@
  * Time: 13:11
  */
 
-require_once("./get_db_func.php");
-require_once("./log_reg_func.php");
+require_once("get_db_func.php");
+require_once("log_reg_func.php");
 
 session_start();
 ?>
